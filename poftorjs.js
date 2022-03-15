@@ -5289,52 +5289,106 @@ console.log(cost)
 // });
 
 // console.log(num + ':' + lengthOb);
-const initialize = {
-  items: [
-    [
-      { name: 'Задача', flag: false, id: 0 },
-      { name: 'Задача', flag: false, id: 1 },
-    ],
-    [
-      { name: 'Задача', flag: false, id: 0 },
-      { name: 'Задача', flag: false, id: 1 },
-      { name: 'Задача', flag: false, id: 2 },
-      { name: 'Задача', flag: false, id: 3 },
-    ],
-    [
-      { name: 'Задача', flag: false, id: 0 },
-      { name: 'Задача', flag: false, id: 1 },
-    ],
-    [
-      { name: 'Задача', flag: false, id: 0 },
-      { name: 'Задача', flag: false, id: 1 },
-    ],
-    [
-      { name: 'Задача', flag: false, id: 0 },
-      { name: 'Задача', flag: false, id: 1 },
-    ],
-    [
-      { name: 'Задача', flag: false, id: 0 },
-      { name: 'Задача', flag: false, id: 1 },
-    ],
-    [
-      { name: 'Задача', flag: false, id: 0 },
-      { name: 'Задача', flag: false, id: 1 },
-    ],
-  ],
-  days: [
-    { name: 'Понедельник', id: 0, procent: null },
-    { name: 'Вторник', id: 1, procent: null },
-    { name: 'Среда', id: 2, procent: null },
-    { name: 'Четверг', id: 3, procent: null },
-    { name: 'Пятница', id: 4, procent: null },
-    { name: 'Суббота', id: 5, procent: null },
-    { name: 'Воскресенье', id: 6, procent: null },
-  ],
-  fetch: false,
+// const initialize = {
+//   items: [
+//     [
+//       { name: 'Задача', flag: false, id: 0 },
+//       { name: 'Задача', flag: false, id: 1 },
+//     ],
+//     [
+//       { name: 'Задача', flag: false, id: 0 },
+//       { name: 'Задача', flag: false, id: 1 },
+//       { name: 'Задача', flag: false, id: 2 },
+//       { name: 'Задача', flag: false, id: 3 },
+//     ],
+//     [
+//       { name: 'Задача', flag: false, id: 0 },
+//       { name: 'Задача', flag: false, id: 1 },
+//     ],
+//     [
+//       { name: 'Задача', flag: false, id: 0 },
+//       { name: 'Задача', flag: false, id: 1 },
+//     ],
+//     [
+//       { name: 'Задача', flag: false, id: 0 },
+//       { name: 'Задача', flag: false, id: 1 },
+//     ],
+//     [
+//       { name: 'Задача', flag: false, id: 0 },
+//       { name: 'Задача', flag: false, id: 1 },
+//     ],
+//     [
+//       { name: 'Задача', flag: false, id: 0 },
+//       { name: 'Задача', flag: false, id: 1 },
+//     ],
+//   ],
+//   days: [
+//     { name: 'Понедельник', id: 0, procent: null },
+//     { name: 'Вторник', id: 1, procent: null },
+//     { name: 'Среда', id: 2, procent: null },
+//     { name: 'Четверг', id: 3, procent: null },
+//     { name: 'Пятница', id: 4, procent: null },
+//     { name: 'Суббота', id: 5, procent: null },
+//     { name: 'Воскресенье', id: 6, procent: null },
+//   ],
+//   fetch: false,
+// };
+
+// initialize.items[1].map((elem) => {
+//   console.log(elem);
+//   console.log(elem.id);
+// });
+
+/*palindrom*/
+/*
+let text = 'madam';
+let test = 'aros s ora';
+const palin = text1 => {
+  let num = 0;
+  let clone = text1
+    .split(' ')
+    .map(elem => elem.split(''))
+    .flat()
+    .reverse()
+    .join('');
+  let text = clone
+    .split('')
+    .reverse()
+    .join('');
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] === clone[i]) {
+      num += 1;
+    }
+  }
+  if (num === text.length) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
-initialize.items[1].map((elem) => {
-  console.log(elem);
-  console.log(elem.id);
-});
+console.log(palin(text));
+console.log(palin(test));
+console.log(palin('aro s s ora'));
+console.log(palin(' p        r i v        e t t         e v i       r        p'));*/
+
+/*самое длинное слово*/
+/*let text = 'madam privetqwe apologize';
+let test = 'aros s ora';
+const palin = text1 => {
+  let text = text1.split(' ');
+  let num = 0;
+  let res = '';
+  for (let elem of text) {
+    if (elem.length > num) {
+      num = elem.length;
+      res = elem;
+    }
+  }
+  return res;
+};
+
+console.log(palin(text));
+console.log(palin(test));
+console.log(palin('aroq s s ora'));
+console.log(palin(' p        r i vet        e t t         e v i       r        p'));*/
