@@ -1,0 +1,113 @@
+body {
+  background: url(D:\screenshot/wallpapersden.com_human-in-space-digital-art_2560x1440.jpg);
+  color: purple;
+}
+/*
+
+.mil{
+  
+    width: 350px;
+    display: flex;
+    
+    height: 80px;
+}
+
+.onebl{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.imgForuser{
+    width: 50px;
+    margin-bottom: 4px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+.butForUser{
+    width: 70px;
+    font-size: 10px;
+    margin: 0 auto;
+    background-color: rgb(33, 9, 58);
+    border: 0px;
+}
+
+.twobl{
+    display: flex;
+    width: 280px;
+    background-color: rgb(7, 7, 28);
+    border-radius:60px;
+}
+
+.name,.place{
+    font-size: 13px;
+}
+
+.opi{
+    font-size: 10px;
+    padding-top: 10px;
+}
+.elem1{
+    width: 190px;
+}
+.elem2{
+  
+    width:80px ;
+}
+.place{
+    text-align: right;
+    
+}
+
+.name,.opi{
+    padding-left: 20px;
+}
+
+
+.eee,.zzz{
+	font-size: 30px;
+	line-height: 1.5;
+	font-family: Arial;
+}
+
+.eee {
+    color: blue;
+}
+.zzz {
+    color:pink
+} */
+body {
+  margin: 0;
+}
+.container {
+  width: 400px;
+  background-color: aliceblue;
+  margin: 0 auto;
+  height: 700px;
+}
+
+.ob {
+  background-color: aqua;
+  border-radius: 10px;
+  width: 370px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text {
+  position: relative;
+  z-index: 1001;
+}
+.back_color {
+  position: absolute;
+
+  background-color: blueviolet;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 14px;
+  z-index: 1000;
+}
