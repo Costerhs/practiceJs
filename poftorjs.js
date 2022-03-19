@@ -5392,3 +5392,190 @@ console.log(palin(text));
 console.log(palin(test));
 console.log(palin('aroq s s ora'));
 console.log(palin(' p        r i vet        e t t         e v i       r        p'));*/
+
+//codewars1
+// function fourse(num) {
+//   for (let i = 0; i <= num; i++) {
+//     let res = i * i;
+//     console.log(res + ':' + num);
+//     if (res === num) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+// console.log(fourse(25));
+// console.log(fourse(0));
+// console.log(fourse(4));
+// console.log(fourse(26));
+// console.log(fourse(0));
+
+//codewars2
+// function fourse(name) {
+// 	let arr = name.filter((el) => el.length === 4);
+// 	return arr;
+//   }
+//   console.log(fourse(['Ryan', 'Kieran', 'Mark']));
+
+//codewars3
+// function fourse(num) {
+
+// 	if (num % Math.sqrt(num) === 0) {
+// 	  return (Math.sqrt(num) + 1) * (Math.sqrt(num) + 1);
+// 	} else {
+// 	  return -1;
+// 	}
+//   }
+
+//   console.log(fourse(121));
+//   console.log(fourse(625));
+//   console.log(fourse(114));
+
+//codewars4
+// function fourse(arr) {
+// 	let arr_en = [
+// 	  'a',
+// 	  'b',
+// 	  'c',
+// 	  'd',
+// 	  'e',
+// 	  'f',
+// 	  'g',
+// 	  'h',
+// 	  'i',
+// 	  'j',
+// 	  'k',
+// 	  'l',
+// 	  'm',
+// 	  'n',
+// 	  'o',
+// 	  'p',
+// 	  'q',
+// 	  'r',
+// 	  's',
+// 	  't',
+// 	  'u',
+// 	  'v',
+// 	  'w',
+// 	  'x',
+// 	  'y',
+// 	  'z',
+// 	];
+// 	let arr_EN = [
+// 	  'A',
+// 	  'B',
+// 	  'C',
+// 	  'D',
+// 	  'E',
+// 	  'F',
+// 	  'G',
+// 	  'H',
+// 	  'I',
+// 	  'J',
+// 	  'K',
+// 	  'L',
+// 	  'M',
+// 	  'N',
+// 	  'O',
+// 	  'P',
+// 	  'Q',
+// 	  'R',
+// 	  'S',
+// 	  'T',
+// 	  'U',
+// 	  'V',
+// 	  'W',
+// 	  'X',
+// 	  'Y',
+// 	  'Z',
+// 	];
+// 	let res = '';
+// 	let norm;
+// 	let num = 0;
+// 	arr_en.map((el, index) => {
+// 	  if (arr[0] === el) {
+// 		num = index;
+// 		norm = arr_en;
+// 	  }
+// 	});
+// 	arr_EN.map((el, index) => {
+// 	  if (arr[0] === el) {
+// 		num = index;
+// 		norm = arr_EN;
+// 	  }
+// 	});
+
+// 	let orig = norm.splice(num, arr.length);
+// 	res = orig.filter((el, index) => el != arr[index]);
+// 	return res[0];
+//   }
+
+//   console.log(fourse(['o', 'p', 'l', 'r']));
+//   console.log(fourse(['a', 'b', 'c', 'd', 'f']));
+//   console.log(fourse(['O', 'Q', 'R', 'S']));
+
+//codewars5
+// function fourse(arr) {
+//   return (
+//     '(' +
+//     arr[0] +
+//     arr[1] +
+//     arr[2] +
+//     ')' +
+//     ' ' +
+//     arr[3] +
+//     arr[4] +
+//     arr[5] +
+//     '-' +
+//     arr[6] +
+//     arr[7] +
+//     arr[8] +
+//     arr[9]
+//   );
+// }
+// console.log(fourse([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
+
+//codeWars6
+/*function test(str) {
+  let resX = 0;
+  let resY = 0;
+
+  for (let elem of str) {
+    if (elem === 'x' || elem === 'X') {
+      resX += 1;
+    } else if (elem === 'o' || elem === 'O') {
+      resY += 1;
+    }
+  }
+  if (resX === resY) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(test('ooxx'));
+console.log(test('xooxx'));
+console.log(test('ooxXm'));
+console.log(test('zpzpzpp'));
+console.log(test('zzoo'));*/
+
+//codewars7
+/*
+function findEvenIndex(arr)
+{
+  let res = null;
+  for (let i = 0; i < arr.length; i++) {
+    let k = i;
+    let one = arr.slice(0, i);
+    let two = arr.slice(k+=1);
+    let resO = one.reduce((elem, sum) => elem + sum, 0);
+    let resT = two.reduce((elem, sum) => elem + sum, 0);
+     if(resO === resT){
+     return i
+     }
+    
+  }
+  return -1
+}*/
