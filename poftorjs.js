@@ -5579,3 +5579,34 @@ function findEvenIndex(arr)
   }
   return -1
 }*/
+
+//codewars
+/*function digital_root(num) {
+   let str = String(num);
+  let res = 0;
+  for(let el of str){
+    res+=Number(el);
+  }
+  if (String(res).length > 1){
+    
+    return digital_root(res)
+  }else{
+    return res
+  }
+}*/
+
+/*
+function order(str){
+	let result = [];
+	  str.split(' ').map((el,index) => {
+		for(let elem of el){
+		 if(Boolean(Number(elem))){
+		   result[Number(elem)-1] = el
+		 }
+		}
+		
+	  })
+	
+	
+	return result.join(' ') || ''
+  }*/
